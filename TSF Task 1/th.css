@@ -1,0 +1,85 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    border: 5px solid salmon;
+    color: black;
+    border-radius: 15px;
+}
+body{
+    font-family: Mukta, sans-serif;
+    height: 40vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: gray;
+    background-image: url(bk1.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+table{
+    border-collapse: collapse;
+    box-shadow: 0 5px 10px black;
+    background-color: white;
+    text-align: left;
+    padding: 0;
+}
+thead{
+    box-shadow: 0 5px 10px lightgray;
+
+}
+th{
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.7rem;
+    font-weight: 900;
+}
+td{
+    padding: 1rem 2rem;
+}
+tr:nth-child(even){
+    background-color: lightgreen;
+}
+.menu{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.menu li{
+    display:inline-block ;
+}
+.menu li{
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu li a{
+    color: black;
+    position: relative;
+    font-size: large;
+    text-decoration: none;
+
+}
+.menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu  li:hover::after{
+    width: 100%;
+}  

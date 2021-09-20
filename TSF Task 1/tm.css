@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url(bk3.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.container h1{
+    padding-left: 45%;
+    color: black;
+    padding-top: 10%;
+}
+table{
+    border-collapse: collapse;
+    width: 50%;
+    background-color: lightgrey;
+    border-radius: 5px;
+    box-shadow: 0px 10px 5px rgba(0,0,0,.15);
+    margin: 30px auto;
+    font-family: sans-serif;
+}
+tr{
+    border-bottom: 2px dashed white;
+}
+td{
+    text-align: center;
+    font-size: 20px;
+    padding: .8rem;
+}
+th{
+    font-size: 1.4rem;
+    background-color: lightcyan;
+    color: black;
+    padding: .8rem;
+}
+.box-content label{
+    padding-left: 40%;
+    display:2px inline-flex;
+    color: orange;
+    font-size: 20px;
+    cursor: pointer;
+}
+.box-content select{
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+.box-content input{
+    background-color: white;
+    text-align: center;
+    color:black;
+    font-size: 15px;
+    cursor: pointer;
+}
+.box-content button{
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 20px;
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+}
+#container{
+    text-align: center;
+}
+.box-content button:hover{
+    color: white;
+    background-color: black;
+}
+.menu{
+    float: left;
+    list-style: none;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.menu li{
+    display:inline-block ;
+}
+.menu li{
+    color:white;
+    text-decoration: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+.menu li a{
+    color: black;
+    position: relative;
+    font-size: large;
+    text-decoration: none;
+
+}
+.menu li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background:black;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.menu  li:hover::after{
+    width: 100%;
+}  
+
+  
